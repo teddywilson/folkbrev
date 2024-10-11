@@ -30,7 +30,7 @@ function App() {
       className: "block-4"
     },
     {
-      text: "Markera vem/vilka nedan som du har skickat ett mail till. På så sätt kan nästa person se hur många mail resp person i maillistan har fått och prioritera utifrån det.",
+      text: "Markera vem/vilka nedan som du har skickat ett mail till. På så sätt kan nästa person se hur många mail resp person i maillistan har fått och prioritera utifrån det..",
       className: "block-5"
     }
   ];
