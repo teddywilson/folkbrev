@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kedjebrev/static/css/main.56125d0c.chunk.css",
-    "main.js": "/kedjebrev/static/js/main.6a040026.chunk.js",
-    "main.js.map": "/kedjebrev/static/js/main.6a040026.chunk.js.map",
+    "main.js": "/kedjebrev/static/js/main.2cdc3c43.chunk.js",
+    "main.js.map": "/kedjebrev/static/js/main.2cdc3c43.chunk.js.map",
     "runtime-main.js": "/kedjebrev/static/js/runtime-main.73799906.js",
     "runtime-main.js.map": "/kedjebrev/static/js/runtime-main.73799906.js.map",
     "static/js/2.4cf3b1c1.chunk.js": "/kedjebrev/static/js/2.4cf3b1c1.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.73799906.js",
     "static/js/2.4cf3b1c1.chunk.js",
     "static/css/main.56125d0c.chunk.css",
-    "static/js/main.6a040026.chunk.js"
+    "static/js/main.2cdc3c43.chunk.js"
   ]
 }
