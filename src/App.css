@@ -4,136 +4,82 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  scroll-padding: 0px;
   background-color: #ffffff;
 }
 
 .sticky-container {
-  position: relative;
-  height: 100vh;
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  width: 100%;
 }
 
-/* Smaller title for block 1 to fit emojis */
-.text-block {
-  text-align: center;
-  font-size: 2.5rem;  /* Reduced font size for title */
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  color: #000000;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-/* Larger font for blocks 2, 3, and 5 */
-.text-block.block-2,
-.text-block.block-3,
-.text-block.block-5 {
-  text-align: left;
-  justify-content: flex-start;
-  font-size: 1.5rem;  /* Desktop font size */
-  padding-left: 5%;
-  max-width: 80vw;
-}
-
-/* Larger list in block 4 for desktop */
-.text-block.block-4 {
-  text-align: left;
-  justify-content: flex-start;
-  font-size: 1.2rem;   /* Larger font size for block 4 on desktop */
-  padding-left: 5%;
-  max-width: 80vw;
-  line-height: 1.6;
-  overflow-y: auto;
-}
-
-/* List styling for block 4 */
-.text-block.block-4 ol {
-  list-style-type: decimal;
-  margin-left: 1rem;
+/* General header styles */
+h1, h2, h3 {
+  margin: 0;
   padding: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #000;
 }
 
-.text-block.block-4 ol li {
-  font-weight: normal;
-  margin-bottom: 0.2rem;
-  padding-left: 0.5rem;
-  font-size: 1.1rem;  /* Larger font size for list items on desktop */
+h1 {
+  font-size: 5rem;
+  text-align: center;
 }
 
-.text-block.block-4 ol li ol {
-  list-style-type: lower-alpha;
-  margin-left: 1rem;
+h2 {
+  font-size: 3rem;
+  padding-left: 5%;
+  text-align: left;
 }
 
-.text-block.block-4 ol li ol li {
-  font-size: 1rem;  /* Larger font size for sub-items on desktop */
-  margin-bottom: 0.1rem;
+h3 {
+  font-size: 2rem;
+  padding-left: 5%;
+  text-align: left;
 }
 
-/* Mobile responsiveness */
+ol, ul {
+  padding-left: 5%;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
-  .text-block {
-    font-size: 2rem;
+  h1 {
+    font-size: 3rem;
     padding: 1rem;
   }
 
-  /* Reduce font size for blocks 2, 3, and 5 on mobile */
-  .text-block.block-2,
-  .text-block.block-3,
-  .text-block.block-5 {
-    font-size: 1.1rem;  /* Smaller font size on mobile */
-    padding-left: 3%;   /* Reduced padding on mobile */
+  h2 {
+    font-size: 2rem;
   }
 
-  /* Reduce font size and padding for block 4 (list) on mobile */
-  .text-block.block-4 {
-    font-size: 0.9rem;   /* Smaller font size for block 4 on mobile */
-    padding-left: 3%;    /* Reduced padding on mobile */
+  h3 {
+    font-size: 1.5rem;
   }
 
-  .text-block.block-4 ol li {
-    font-size: 0.85rem;  /* Smaller font for list items on mobile */
-    padding-left: 0.5rem;
-  }
-
-  .text-block.block-4 ol li ol li {
-    font-size: 0.75rem;  /* Smaller font for sub-items on mobile */
+  ol, ul {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .text-block {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+  h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
   }
 
-  /* Further reduce font size for blocks 2, 3, and 5 on smaller screens */
-  .text-block.block-2,
-  .text-block.block-3,
-  .text-block.block-5 {
-    font-size: 1rem;  /* Even smaller for very small screens */
-    padding-left: 3%;
+  h2 {
+    font-size: 1.8rem;
   }
 
-  /* Reduce font size and padding for block 4 (list) on smaller screens */
-  .text-block.block-4 {
-    font-size: 0.75rem;  /* Small font size for block 4 on very small screens */
-    padding-left: 2%;
+  h3 {
+    font-size: 1.3rem;
   }
 
-  .text-block.block-4 ol li {
-    font-size: 0.75rem;
-    padding-left: 0.25rem;
-  }
-
-  .text-block.block-4 ol li ol li {
-    font-size: 0.7rem;
+  ol, ul {
+    font-size: 0.9rem;
   }
 }
