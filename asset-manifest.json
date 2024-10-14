@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kedjebrev/static/css/main.2940edbe.chunk.css",
+    "main.css": "/kedjebrev/static/css/main.3df121ae.chunk.css",
     "main.js": "/kedjebrev/static/js/main.3411198e.chunk.js",
     "main.js.map": "/kedjebrev/static/js/main.3411198e.chunk.js.map",
     "runtime-main.js": "/kedjebrev/static/js/runtime-main.73799906.js",
@@ -8,13 +8,13 @@
     "static/js/2.586018a1.chunk.js": "/kedjebrev/static/js/2.586018a1.chunk.js",
     "static/js/2.586018a1.chunk.js.map": "/kedjebrev/static/js/2.586018a1.chunk.js.map",
     "index.html": "/kedjebrev/index.html",
-    "static/css/main.2940edbe.chunk.css.map": "/kedjebrev/static/css/main.2940edbe.chunk.css.map",
+    "static/css/main.3df121ae.chunk.css.map": "/kedjebrev/static/css/main.3df121ae.chunk.css.map",
     "static/js/2.586018a1.chunk.js.LICENSE.txt": "/kedjebrev/static/js/2.586018a1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.73799906.js",
     "static/js/2.586018a1.chunk.js",
-    "static/css/main.2940edbe.chunk.css",
+    "static/css/main.3df121ae.chunk.css",
     "static/js/main.3411198e.chunk.js"
   ]
 }
