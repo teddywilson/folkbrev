@@ -37,7 +37,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6rem;
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -91,7 +91,7 @@ ol li, ul li {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 
   h3 {
