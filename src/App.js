@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
       <StickyContainer>
-        <h1>Kedjebrev för Gaza & Lebanon 🇵🇸🇱🇧</h1>
+        <h1>Kedjebrev för Gaza & Lebanon</h1>
       </StickyContainer>
 
       <StickyContainer>
@@ -25,7 +25,7 @@ function App() {
       </StickyContainer>
 
       <StickyContainer>
-        <h3>Läs igenom dom här instruktionerna innan du går vidare:</h3>
+        <h3>Läs igenom dom här instruktionerna innan du går vidare</h3>
         <ol>
           <li>
             Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.

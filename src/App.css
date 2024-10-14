@@ -10,10 +10,12 @@
 /* Remove the fade-in animations */
 .fade-in {
   opacity: 1;
+  /* No transition */
 }
 
 .fade-in.visible {
   opacity: 1;
+  /* Ensures full visibility */
 }
 
 /* Each block should take full height and center content */
@@ -21,43 +23,51 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   scroll-snap-align: start;
   width: 100%;
   flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* General header and text styling */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #000;
+  text-align: left;
+  max-width: 90vw;
 }
 
 h1 {
   font-size: 6rem;
-  text-align: left;
-  padding: 2rem;
 }
 
-h2, h3 {
+h2 {
   font-size: 4rem;
-  text-align: left;
-  padding: 0 5%;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 /* Ensure lists sit properly under headings */
-ol, ul {
-  padding-left: 5%;
+ol,
+ul {
   width: 100%;
-  max-width: 80vw;
+  max-width: 90vw;
   font-size: 1.5rem;
   color: #000;
-  margin-top: 1.5rem;
+  padding: 0;
+  list-style-type: none;  
 }
 
-ol li, ul li {
+ol li,
+ul li {
   margin-bottom: 1rem;
 }
 
@@ -65,31 +75,37 @@ ol li, ul li {
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
-    padding: 1rem;
   }
 
-  h2, h3 {
+  h2 {
     font-size: 3rem;
   }
 
-  ol, ul {
+  h3 {
+    font-size: 2rem;
+  }
+
+  ol,
+  ul {
     font-size: 1.2rem;
-    padding-left: 3%;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 3rem;
-    padding: 1rem;
   }
 
-  h2, h3 {
+  h2 {
     font-size: 2rem;
   }
 
-  ol, ul {
+  h3 {
     font-size: 1rem;
-    padding-left: 2%;
+  }
+
+  ol,
+  ul {
+    font-size: 1rem;
   }
 }
