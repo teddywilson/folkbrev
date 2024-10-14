@@ -1,52 +1,90 @@
+/* General layout */
 .app {
-  display: flex;
-  flex-direction: column;
+  display: block;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
   background-color: #ffffff;
 }
 
-.sticky-container {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-  width: 100%;
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
 }
 
-/* General header styles */
-h1, h2, h3 {
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* Each block should take full height and center content */
+.sticky-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Absolute centered h1 */
+h1 {
+  font-size: 6rem;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #000;
 }
 
-h1 {
-  font-size: 5rem;
-  text-align: center;
+/* Left-aligned but horizontally centered h2 and h3 */
+h2, h3 {
+  width: 80%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #000;
+  padding: 0 5%;
 }
 
 h2 {
-  font-size: 3rem;
-  padding-left: 5%;
+  font-size: 3.5rem;
   text-align: left;
 }
 
 h3 {
-  font-size: 2rem;
-  padding-left: 5%;
+  font-size: 2.5rem;
   text-align: left;
 }
 
+/* List styling */
 ol, ul {
   padding-left: 5%;
-  font-size: 1.2rem;
+  color: #000;
 }
 
+ol li, ul li {
+  margin-bottom: 1rem;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  ol, ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
   h1 {
     font-size: 3rem;
     padding: 1rem;
@@ -57,29 +95,10 @@ ol, ul {
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   ol, ul {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-    padding: 1rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  ol, ul {
-    font-size: 0.9rem;
   }
 }
