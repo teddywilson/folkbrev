@@ -41,23 +41,20 @@ h1 {
   padding: 2rem;
 }
 
-h2 {
+h2, h3 {
   font-size: 4rem;
   text-align: left;
-  padding: 0 5%; /* Apply equal padding to both left and right */
+  padding: 0 5%;
 }
 
-h3 {
-  font-size: 3rem;
-  text-align: left;
-  padding: 0 5%; /* Apply equal padding to both left and right */
-}
-
-/* List styling */
+/* Ensure lists sit properly under headings */
 ol, ul {
   padding-left: 5%;
+  width: 100%;
+  max-width: 80vw;
   font-size: 1.5rem;
   color: #000;
+  margin-top: 1.5rem;
 }
 
 ol li, ul li {
@@ -71,16 +68,13 @@ ol li, ul li {
     padding: 1rem;
   }
 
-  h2 {
+  h2, h3 {
     font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2.5rem;
   }
 
   ol, ul {
     font-size: 1.2rem;
+    padding-left: 3%; /* Adjust padding for smaller screens */
   }
 }
 
@@ -90,15 +84,12 @@ ol li, ul li {
     padding: 1rem;
   }
 
-  h2 {
-    font-size: 2.0rem;
-  }
-
-  h3 {
+  h2, h3 {
     font-size: 2rem;
   }
 
   ol, ul {
     font-size: 1rem;
+    padding-left: 2%; /* Further adjust padding for very small screens */
   }
 }
