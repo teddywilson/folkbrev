@@ -7,14 +7,13 @@
   background-color: #ffffff;
 }
 
-/* Animations */
+/* Remove the fade-in animations */
 .fade-in {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  opacity: 1; /* No transition */
 }
 
 .fade-in.visible {
-  opacity: 1;
+  opacity: 1; /* Ensures full visibility */
 }
 
 /* Each block should take full height and center content */
@@ -22,41 +21,42 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   scroll-snap-align: start;
   width: 100%;
   flex-direction: column;
 }
 
-/* Absolute centered h1 */
-h1 {
-  font-size: 6rem;
+/* General header and text styling */
+h1, h2, h3 {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #000;
 }
 
-/* Left-aligned but horizontally centered h2 and h3 */
-h2, h3 {
-  width: 80%;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  color: #000;
-  padding: 0 5%;
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: left;
+  padding: 0 5%; /* Apply equal padding to both left and right */
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: left;
+  padding: 0 5%; /* Apply equal padding to both left and right */
 }
 
 /* List styling */
 ol, ul {
   padding-left: 5%;
+  font-size: 1.5rem;
   color: #000;
 }
 
@@ -72,11 +72,11 @@ ol li, ul li {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   ol, ul {
@@ -91,11 +91,11 @@ ol li, ul li {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   ol, ul {
