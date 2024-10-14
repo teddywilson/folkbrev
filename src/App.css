@@ -9,11 +9,11 @@
 
 /* Remove the fade-in animations */
 .fade-in {
-  opacity: 1; /* No transition */
+  opacity: 1;
 }
 
 .fade-in.visible {
-  opacity: 1; /* Ensures full visibility */
+  opacity: 1;
 }
 
 /* Each block should take full height and center content */
@@ -74,7 +74,7 @@ ol li, ul li {
 
   ol, ul {
     font-size: 1.2rem;
-    padding-left: 3%; /* Adjust padding for smaller screens */
+    padding-left: 3%;
   }
 }
 
@@ -90,6 +90,6 @@ ol li, ul li {
 
   ol, ul {
     font-size: 1rem;
-    padding-left: 2%; /* Further adjust padding for very small screens */
+    padding-left: 2%;
   }
 }
