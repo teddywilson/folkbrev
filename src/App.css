@@ -68,15 +68,16 @@ h3 {
   font-weight: 400;
 }
 
-/* Ensure lists sit properly under headings */
 ol,
 ul {
   width: 100%;
   max-width: 90vw;
   font-size: 1.5rem;
   color: #000;
-  padding: 0;
-  list-style-type: none;
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 ol li,

@@ -47,21 +47,21 @@ Om du vill skicka till fler går det självklart bra – the more the merrier!
         `}</h3>
         <ol>
           <li>
-            1. Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.
+            Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.
           </li>
           <li>
-            2. Fyll i ditt namn och mottagarens namn.
+            Fyll i ditt namn och mottagarens namn.
           </li>
           <li>
-            3. Skriv in 1-3 prompts (alltså instruktioner till AI-verktyget) i stora rutan. På nästa sida har vi skrivit ihop ett gäng exempel som du gärna får kopiera, men du kan såklart också hitta på egna.
+            Skriv in 1-3 prompts (alltså instruktioner till AI-verktyget) i stora rutan. På nästa sida har vi skrivit ihop ett gäng exempel som du gärna får kopiera, men du kan såklart också hitta på egna.
           </li>
           <li>
-            4. Anpassa sedan ditt mejl efter tonläge, längd, språk etc, genom att trycka på knapparna i verktyget.
+            Anpassa sedan ditt mejl efter tonläge, längd, språk etc, genom att trycka på knapparna i verktyget.
           </li>
           <li>
-            5. När du är nöjd med din text: kopiera den och klistra in i ditt påbörjade mejl → tryck på Skicka!
+            När du är nöjd med din text: kopiera den och klistra in i ditt påbörjade mejl → tryck på Skicka!
           </li>
-          <li>6. Kom sen tillbaka hit för ett sista litet men viktigt steg.</li>
+          <li>Kom sen tillbaka hit för ett sista litet men viktigt steg.</li>
         </ol>
       </StickyContainer>
 
