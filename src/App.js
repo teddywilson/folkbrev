@@ -1,4 +1,4 @@
-import React, { Text } from 'react';
+import React from 'react';
 import StickyContainer from './components/StickyContainer';
 import './App.css';
 
@@ -41,34 +41,27 @@ Om du vill skicka till fler går det självklart bra – the more the merrier!
       </StickyContainer>
 
       <StickyContainer>
-        <h3>Läs igenom dom här instruktionerna innan du går vidare</h3>
+        <h2>Skapa ditt unika Folkbrev!</h2>
+        <h3>{`
+\nLäs igenom dom här instruktionerna innan du går vidare
+        `}</h3>
         <ol>
           <li>
-            Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.
-          </li>
-          <li>Skriv ditt namn och mottagarens namn.</li>
-          <li>
-            Skriv in 1-3 prompts (instruktioner till Ai-verktyget). Här är några
-            exempel:
-            <ol>
-              <li>Folkmordet i Gaza måste upphöra.</li>
-              <li>Hur försvarar ni att.</li>
-              <li>Ditt uppdrag som journalist är att.. hur förklarar du.</li>
-              <li>
-                Ditt företag har möjlighet att sätta press på regeringen genom
-                att…
-              </li>
-            </ol>
+            1. Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.
           </li>
           <li>
-            Välj ton, humör, längd mm efter tycke genom att trycka på knapparna
-            i verktyget.
+            2. Fyll i ditt namn och mottagarens namn.
           </li>
           <li>
-            När du är nöjd, kopiera texten, klistra in i ditt nyskapade mail och
-            skicka.
+            3. Skriv in 1-3 prompts (alltså instruktioner till AI-verktyget) i stora rutan. På nästa sida har vi skrivit ihop ett gäng exempel som du gärna får kopiera, men du kan såklart också hitta på egna.
           </li>
-          <li>Kom sen tillbaka hit för ett sista litet steg.</li>
+          <li>
+            4. Anpassa sedan ditt mejl efter tonläge, längd, språk etc, genom att trycka på knapparna i verktyget.
+          </li>
+          <li>
+            5. När du är nöjd med din text: kopiera den och klistra in i ditt påbörjade mejl → tryck på Skicka!
+          </li>
+          <li>6. Kom sen tillbaka hit för ett sista litet men viktigt steg.</li>
         </ol>
       </StickyContainer>
 
