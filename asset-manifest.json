@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kedjebrev/static/css/main.3df121ae.chunk.css",
-    "main.js": "/kedjebrev/static/js/main.3411198e.chunk.js",
-    "main.js.map": "/kedjebrev/static/js/main.3411198e.chunk.js.map",
-    "runtime-main.js": "/kedjebrev/static/js/runtime-main.73799906.js",
-    "runtime-main.js.map": "/kedjebrev/static/js/runtime-main.73799906.js.map",
-    "static/js/2.586018a1.chunk.js": "/kedjebrev/static/js/2.586018a1.chunk.js",
-    "static/js/2.586018a1.chunk.js.map": "/kedjebrev/static/js/2.586018a1.chunk.js.map",
-    "index.html": "/kedjebrev/index.html",
-    "static/css/main.3df121ae.chunk.css.map": "/kedjebrev/static/css/main.3df121ae.chunk.css.map",
-    "static/js/2.586018a1.chunk.js.LICENSE.txt": "/kedjebrev/static/js/2.586018a1.chunk.js.LICENSE.txt"
+    "main.css": "/folkbrev/static/css/main.97f7221a.chunk.css",
+    "main.js": "/folkbrev/static/js/main.f77cbf39.chunk.js",
+    "main.js.map": "/folkbrev/static/js/main.f77cbf39.chunk.js.map",
+    "runtime-main.js": "/folkbrev/static/js/runtime-main.123df2f8.js",
+    "runtime-main.js.map": "/folkbrev/static/js/runtime-main.123df2f8.js.map",
+    "static/js/2.5bf52357.chunk.js": "/folkbrev/static/js/2.5bf52357.chunk.js",
+    "static/js/2.5bf52357.chunk.js.map": "/folkbrev/static/js/2.5bf52357.chunk.js.map",
+    "index.html": "/folkbrev/index.html",
+    "static/css/main.97f7221a.chunk.css.map": "/folkbrev/static/css/main.97f7221a.chunk.css.map",
+    "static/js/2.5bf52357.chunk.js.LICENSE.txt": "/folkbrev/static/js/2.5bf52357.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73799906.js",
-    "static/js/2.586018a1.chunk.js",
-    "static/css/main.3df121ae.chunk.css",
-    "static/js/main.3411198e.chunk.js"
+    "static/js/runtime-main.123df2f8.js",
+    "static/js/2.5bf52357.chunk.js",
+    "static/css/main.97f7221a.chunk.css",
+    "static/js/main.f77cbf39.chunk.js"
   ]
 }
