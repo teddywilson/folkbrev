@@ -1,1 +1,1 @@
-# kedjebrev 🇵🇸🇱🇧
+# Folkbrev för Gaza & Lebanon
