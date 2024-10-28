@@ -16,7 +16,8 @@ function App() {
   };
 
   useEffect(() => {
-    window.sessionStorage.setItem(acceptedNoticedKey, JSON.stringify(acceptedNotice));
+    // TODO(teddywilson): temporary disable
+    // window.sessionStorage.setItem(acceptedNoticedKey, JSON.stringify(acceptedNotice));
   }, [acceptedNotice]);
 
   return (
