@@ -15,12 +15,19 @@ function App() {
             marginTop: 'auto',
             marginBottom: '24px',
             boxShadow: 'rgba(149, 157, 165, 0.4) 0px 4px 24px',
-            borderRadius: '12px'
+            borderRadius: '12px',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center'
           }}><h4 style={{
             paddingLeft: '16px',
             paddingRight: '16px'
           }}>{`
-\u26A0 Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc. Hjälp oss hålla troll och högerextremister borta!
+\u26A0
+          `}</h4><h4 style={{
+              paddingRight: '16px'
+            }}>{`
+Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.
           `}</h4></div>
         </div>
       </StickyContainer>
