@@ -9,7 +9,7 @@
   overflow-x: hidden;
   /* Disable sideways scroll */
   overflow-y: scroll;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   background-color: #ffffff;
 }
@@ -27,7 +27,7 @@
 
 /* Each block should take full height and center content */
 .sticky-container {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   /* Centers content vertically */
