@@ -6,8 +6,23 @@ function App() {
   return (
     <div className="app">
       <StickyContainer>
-        <h1>FOLKBREV</h1>
-        <h2><i>För <span style={{ color: 'green' }}>GAZA</span> & <span style={{ color: 'red' }}>LIBANON</span></i></h2>
+        <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+          <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h1>FOLKBREV</h1>
+            <h2><i>För <span style={{ color: 'green' }}>GAZA</span> & <span style={{ color: 'red' }}>LIBANON</span></i></h2>
+          </div>
+          <div style={{
+            marginTop: 'auto',
+            marginBottom: '24px',
+            boxShadow: 'rgba(149, 157, 165, 0.4) 0px 4px 24px',
+            borderRadius: '12px'
+          }}><h4 style={{
+            paddingLeft: '16px',
+            paddingRight: '16px'
+          }}>{`
+\u26A0 Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc. Hjälp oss hålla troll och högerextremister borta!
+          `}</h4></div>
+        </div>
       </StickyContainer>
 
       <StickyContainer>
