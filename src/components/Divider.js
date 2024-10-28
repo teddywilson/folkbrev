@@ -6,7 +6,9 @@ const Divider = () => {
             display: 'flex',
             width: '64px',
             height: '5px',
-            marginTop: '-2px'
+            marginTop: '-2px',
+            borderRadius: '1px',
+            overflow: 'hidden'
         }}>
             <div style={{
                 background: '#149954',
