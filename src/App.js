@@ -58,7 +58,7 @@ Om du vill skicka till fler går det självklart bra – the more the merrier!
       <StickyContainer>
         <h2>Skapa ditt unika Folkbrev!</h2>
         <h3>{`
-\nLäs igenom dom här instruktionerna innan du går vidare
+Läs igenom dom här instruktionerna innan du går vidare
         `}</h3>
         <ol>
           <li>
