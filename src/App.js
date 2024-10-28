@@ -2,6 +2,8 @@ import React from 'react';
 import StickyContainer from './components/StickyContainer';
 import './App.css';
 
+const relaxedSubheadingWeight = 200;
+
 function App() {
   return (
     <div className="app">
@@ -11,23 +13,21 @@ function App() {
             <h1>FOLKBREV</h1>
             <h2>
               <i>
-                <span style={{ fontWeight: '200' }}>För </span>
-                <span style={{ color: 'green' }}>GAZA</span>
-                <span style={{ fontWeight: '200' }}>{` & `}</span>
-                <span style={{ color: 'red' }}>LIBANON</span>
+                <span style={{ fontWeight: relaxedSubheadingWeight }}>För </span>
+                <span className='gaza'>GAZA</span>
+                <span style={{ fontWeight: relaxedSubheadingWeight }}>{` & `}</span>
+                <span className='libanon'>LIBANON</span>
               </i>
             </h2>
           </div>
           <div style={{
             marginTop: 'auto',
             marginBottom: '24px',
-            boxShadow: 'rgba(149, 157, 165, 0.4) 0px 4px 24px',
-            borderRadius: '12px',
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
             padding: '0px'
-          }}><h4 style={{
+          }} className="shadow-container"><h4 style={{
             paddingLeft: '16px',
             paddingRight: '14px'
           }}>{`

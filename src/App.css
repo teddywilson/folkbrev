@@ -11,16 +11,14 @@
   display: block;
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  /* Disable sideways scroll */
   overflow-y: scroll;
   height: 100dvh;
-  width: 100vw;
+  width: 75vw;
   background-color: #ffffff;
 }
 
 .fade-in {
   opacity: 1;
-  /* No transition */
 }
 
 .fade-in.visible {
@@ -38,6 +36,19 @@
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
+}
+
+.shadow-container {
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 4px 24px;
+  border-radius: 12px;
+}
+
+.gaza {
+  color: #149954;
+}
+
+.libanon {
+  color: #ED1C24;
 }
 
 h1,
@@ -95,6 +106,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
   ol,
   ul {
     font-size: 1.2rem;
