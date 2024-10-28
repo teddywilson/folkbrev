@@ -68,12 +68,12 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -95,18 +95,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
   ol,
   ul {
     font-size: 1.2rem;
