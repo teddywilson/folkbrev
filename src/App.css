@@ -97,8 +97,9 @@ ol,
 ul {
   width: 100%;
   max-width: 90vw;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
-  color: #000;
+  font-weight: 500;
   list-style-type: decimal;
   list-style-position: inside;
   text-indent: -1em;
@@ -119,7 +120,7 @@ ul {
 
   .sticky-container {
     width: 100%;
-  }    
+  }
 }
 
 @media (max-width: 480px) {
