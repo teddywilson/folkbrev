@@ -25,14 +25,17 @@ function App() {
             borderRadius: '12px',
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'center',
+            padding: '0px'
           }}><h4 style={{
             paddingLeft: '16px',
             paddingRight: '14px'
           }}>{`
 \u26A0
           `}</h4><h4 style={{
-              paddingRight: '16px'
+              paddingRight: '16px',
+              marginTop: '12px',
+              marginBottom: '12px'
             }}>{`
 Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.
           `}</h4></div>
