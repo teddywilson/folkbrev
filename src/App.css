@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* General layout */
 .app {
   display: block;
   scroll-snap-type: y mandatory;
@@ -14,7 +13,6 @@
   background-color: #ffffff;
 }
 
-/* Remove the fade-in animations */
 .fade-in {
   opacity: 1;
   /* No transition */
@@ -22,17 +20,13 @@
 
 .fade-in.visible {
   opacity: 1;
-  /* Ensures full visibility */
 }
 
-/* Each block should take full height and center content */
 .sticky-container {
   height: 100dvh;
   display: flex;
   justify-content: center;
-  /* Centers content vertically */
   align-items: flex-start;
-  /* Aligns text to start from the top */
   scroll-snap-align: start;
   width: 100%;
   flex-direction: column;
@@ -41,7 +35,6 @@
   box-sizing: border-box;
 }
 
-/* General header and text styling */
 h1,
 h2,
 h3 {
@@ -85,7 +78,6 @@ ul li {
   margin-bottom: 1rem;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
