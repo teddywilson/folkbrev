@@ -1,46 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Divider from './components/Divider';
 import StickyContainer from './components/StickyContainer';
+import StickyBox from "react-sticky-box";
+
 import './App.css';
 
 const relaxedSubheadingWeight = 200;
+const acceptedNoticedKey = "acceptedNotices";
 
 function App() {
+  const [acceptedNotice, setAcceptedNotice] = useState(false)
+  const onClick = () => setAcceptedNotice(true)
+
+  useEffect(() => {
+    if (window.sessionStorage.getItem(acceptedNoticedKey)) {
+      setAcceptedNotice(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.sessionStorage.setItem(acceptedNoticedKey, acceptedNotice);
+  }, [acceptedNotice]);
+
   return (
     <div className="app">
       <StickyContainer>
-        <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-          <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h1>FOLKBREV</h1>
-            <h2>
-              <i>
-                <span style={{ fontWeight: relaxedSubheadingWeight }}>För </span>
-                <span className='gaza'>GAZA</span>
-                <span style={{ fontWeight: relaxedSubheadingWeight }}>{` & `}</span>
-                <span className='libanon'>LIBANON</span>
-              </i>
-            </h2>
-          </div>
-          <div style={{
-            marginTop: 'auto',
-            marginBottom: '24px',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            padding: '0px'
-          }} className="shadow-container"><h4 style={{
-            paddingLeft: '16px',
-            paddingRight: '14px'
-          }}>{`
-\u26A0
-          `}</h4><h4 style={{
-              paddingRight: '16px',
-              marginTop: '12px',
-              marginBottom: '12px'
-            }}>{`
-Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.
-          `}</h4></div>
-        </div>
+        <h1>FOLKBREV</h1>
+        <h2>
+          <i>
+            <span style={{ fontWeight: relaxedSubheadingWeight }}>För </span>
+            <span className='gaza'>GAZA</span>
+            <span style={{ fontWeight: relaxedSubheadingWeight }}>{` & `}</span>
+            <span className='libanon'>LIBANON</span>
+          </i>
+        </h2>
       </StickyContainer>
 
       <StickyContainer>
@@ -109,6 +102,30 @@ Läs igenom dom här instruktionerna innan du går vidare
       <StickyContainer>
         <h2>Markera vem/vilka nedan som du har skickat ett mail till.</h2>
       </StickyContainer>
+
+      {!acceptedNotice && <StickyBox offsetTop={20} offsetBottom={20} bottom={true}>
+        <div style={{
+          marginTop: 'auto',
+          marginBottom: '24px',
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          maxWidth: '720px',
+          padding: '0px'
+        }} className="shadow-container"><h4 style={{
+        }}>{`
+\u26A0
+          `}</h4><h4 style={{
+            marginTop: '12px',
+            marginBottom: '12px'
+          }}>{`
+Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.
+          `}</h4>
+          <div>✅</div>
+          <input type="submit" value="Search" onClick={onClick} />
+        </div>
+      </StickyBox >
+      }
     </div >
   );
 }
