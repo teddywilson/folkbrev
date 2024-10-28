@@ -9,7 +9,7 @@ function App() {
         <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
           <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h1>FOLKBREV</h1>
-            <h2><i>För <span style={{ color: 'green' }}>GAZA</span> & <span style={{ color: 'red' }}>LIBANON</span></i></h2>
+            <h2><i><span style={{ fontWeight: '200' }}>För </span><span style={{ color: 'green' }}>GAZA</span><span style={{ fontWeight: '200' }}>{` & `}</span><span style={{ color: 'red' }}>LIBANON</span></i></h2>
           </div>
           <div style={{
             marginTop: 'auto',
