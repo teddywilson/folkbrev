@@ -28,7 +28,7 @@ function App() {
             alignItems: 'center'
           }}><h4 style={{
             paddingLeft: '16px',
-            paddingRight: '16px'
+            paddingRight: '14px'
           }}>{`
 \u26A0
           `}</h4><h4 style={{
