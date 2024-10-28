@@ -7,9 +7,11 @@ const relaxedSubheadingWeight = 200;
 const acceptedNoticedKey = "acceptedNotice";
 
 function App() {
-  const [acceptedNotice, setAcceptedNotice] = useState(() => {
-    return JSON.parse(window.sessionStorage.getItem(acceptedNoticedKey)) || false;
-  });
+  // TODO(teddywilson): temporary disable
+  // const [acceptedNotice, setAcceptedNotice] = useState(() => {
+  //   return JSON.parse(window.sessionStorage.getItem(acceptedNoticedKey)) || false;
+  // });
+  const [acceptedNotice, setAcceptedNotice] = useState((false));
 
   const onClick = () => {
     setAcceptedNotice(true);
