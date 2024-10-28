@@ -42,7 +42,8 @@
   box-shadow: rgba(149, 157, 165, 0.5) 0px 4px 24px;
   background: white;
   border-radius: 12px;
-  margin: 64px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .gaza {
@@ -51,6 +52,40 @@
 
 .libanon {
   color: #ED1C24;
+}
+
+.footer-main {
+  width: 100%;
+  -moz-box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 400;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1rem;
+}
+
+.button:focus {
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 1000px #719ECE;
 }
 
 h1,
@@ -91,7 +126,7 @@ h3 {
 }
 
 h4 {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -109,7 +144,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-
   ol,
   ul {
     font-size: 1.2rem;
@@ -142,6 +176,10 @@ ul {
     font-size: .6rem;
   }
 
+  .button {
+    font-size: .6rem;
+  }  
+
   ol,
   ul {
     font-size: 1rem;
@@ -167,6 +205,10 @@ ul {
   }
 
   h4 {
+    font-size: .6rem;
+  }
+
+  .button {
     font-size: .6rem;
   }
 
