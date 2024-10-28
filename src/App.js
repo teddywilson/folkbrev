@@ -108,7 +108,6 @@ Läs igenom dom här instruktionerna innan du går vidare
 
       <StickyContainer>
         <h2>Markera vem/vilka nedan som du har skickat ett mail till.</h2>
-        <Divider />
       </StickyContainer>
     </div >
   );
