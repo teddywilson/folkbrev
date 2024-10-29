@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/folkbrev/static/css/main.2989eec0.chunk.css",
-    "main.js": "/folkbrev/static/js/main.b2c0215e.chunk.js",
-    "main.js.map": "/folkbrev/static/js/main.b2c0215e.chunk.js.map",
+    "main.css": "/folkbrev/static/css/main.a5de2803.chunk.css",
+    "main.js": "/folkbrev/static/js/main.c7cd00cc.chunk.js",
+    "main.js.map": "/folkbrev/static/js/main.c7cd00cc.chunk.js.map",
     "runtime-main.js": "/folkbrev/static/js/runtime-main.123df2f8.js",
     "runtime-main.js.map": "/folkbrev/static/js/runtime-main.123df2f8.js.map",
     "static/js/2.863fcb3c.chunk.js": "/folkbrev/static/js/2.863fcb3c.chunk.js",
     "static/js/2.863fcb3c.chunk.js.map": "/folkbrev/static/js/2.863fcb3c.chunk.js.map",
     "index.html": "/folkbrev/index.html",
-    "static/css/main.2989eec0.chunk.css.map": "/folkbrev/static/css/main.2989eec0.chunk.css.map",
+    "static/css/main.a5de2803.chunk.css.map": "/folkbrev/static/css/main.a5de2803.chunk.css.map",
     "static/js/2.863fcb3c.chunk.js.LICENSE.txt": "/folkbrev/static/js/2.863fcb3c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.123df2f8.js",
     "static/js/2.863fcb3c.chunk.js",
-    "static/css/main.2989eec0.chunk.css",
-    "static/js/main.b2c0215e.chunk.js"
+    "static/css/main.a5de2803.chunk.css",
+    "static/js/main.c7cd00cc.chunk.js"
   ]
 }
