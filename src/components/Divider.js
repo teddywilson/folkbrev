@@ -5,7 +5,7 @@ const Divider = () => {
         <div style={{
             display: 'flex',
             width: '64px',
-            height: '5px',
+            height: '4px',
             marginTop: '-2px',
             borderRadius: '1px',
             overflow: 'hidden'

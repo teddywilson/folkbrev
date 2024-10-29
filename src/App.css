@@ -118,6 +118,12 @@ h2 {
   font-optical-sizing: auto;
 }
 
+h2 {
+  /* font-family: "Merriweather", serif; */
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+}
+
 h3 {
   font-family: "Open Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */

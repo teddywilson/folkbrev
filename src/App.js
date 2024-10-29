@@ -37,7 +37,9 @@ function App() {
       </CSSTransition>
       <StickyContainer>
         <h1>FOLKBREV</h1>
-        <h2>
+        <h2 style={{
+          fontFamily: '"Cormorant Garamond", serif'
+        }}>
           <i>
             <span style={{ fontWeight: relaxedSubheadingWeight }}>för </span>
             <span className='gaza'>GAZA</span>
