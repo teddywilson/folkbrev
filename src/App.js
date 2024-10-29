@@ -39,7 +39,7 @@ function App() {
         <h1>FOLKBREV</h1>
         <h2>
           <i>
-            <span style={{ fontWeight: relaxedSubheadingWeight }}>För </span>
+            <span style={{ fontWeight: relaxedSubheadingWeight }}>för </span>
             <span className='gaza'>GAZA</span>
             <span style={{ fontWeight: relaxedSubheadingWeight }}>{` & `}</span>
             <span className='libanon'>LIBANON</span>
