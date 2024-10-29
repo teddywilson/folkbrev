@@ -95,7 +95,7 @@
   border: 1px solid black;
   border-radius: 5%;
   color: black;
-  cursor: pointer;
+  cursor: default;
   font: inherit;
   font-weight: 400;
   font-size: .75rem;

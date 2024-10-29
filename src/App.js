@@ -31,7 +31,7 @@ function App() {
         <StickyBox>
           <div ref={nodeRef} className='header'>
             <h4>Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.</h4>
-            <input type="submit" value="OK" onClick={onClick} className="button" />
+            <div onClick={onClick} className="button">OK</div>
           </div>
         </StickyBox>
       </CSSTransition>
