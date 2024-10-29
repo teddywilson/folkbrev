@@ -67,21 +67,6 @@
   transition: transform 200ms, opacity 200ms;
 }
 
-.button {
-  appearance: none;
-  background: white;
-  border: 1px solid black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border-radius: 5%;
-  color: black;
-  cursor: pointer;
-  font-size: .75rem;
-  padding: 4px;
-  margin-left: 16px;
-  text-align: center;
-}
-
 h1,
 h2,
 h3 {
@@ -123,8 +108,23 @@ h3 {
 }
 
 h4 {
-  font-size: .75rem;
+  font-size: .9rem;
   font-weight: 600;
+}
+
+.button {
+  appearance: none;
+  background: white;
+  border: 1px solid black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 5%;
+  color: black;
+  cursor: pointer;
+  font-size: .9rem;
+  padding: 3px;
+  margin-left: 16px;
+  text-align: center;
 }
 
 ol,
@@ -141,6 +141,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
   ol,
   ul {
     font-size: 1.2rem;
