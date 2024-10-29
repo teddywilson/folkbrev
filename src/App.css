@@ -14,7 +14,7 @@
   overflow-y: scroll;
   height: 100dvh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .fade-in {
@@ -56,36 +56,52 @@
 
 .footer-main {
   width: 100%;
-  -moz-box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5);
-  position: relative;
+  -moz-box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.header {
+  width: 100%;
+  box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-end;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 200ms, opacity 200ms;
 }
 
 .button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: black;
+  background: white;
   border: 1px solid black;
-  border-radius: 3px;
-  color: white;
+  border-radius: 5%;
+  color: black;
   cursor: pointer;
   font: inherit;
   font-weight: 400;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  font-size: 1rem;
-}
-
-.button:focus {
-  outline: none !important;
-  border-color: #719ECE;
-  box-shadow: 0 0 1000px #719ECE;
+  font-size: .75rem;
+  padding: 4px;
+  margin-left: 16px;
+  text-align: center;
 }
 
 h1,
@@ -93,7 +109,7 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: black;
   text-align: left;
   max-width: 90vw;
   white-space: pre-line;
@@ -126,7 +142,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 600;
 }
 
@@ -144,6 +160,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
   ol,
   ul {
     font-size: 1.2rem;
@@ -173,12 +190,12 @@ ul {
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: .75rem;
   }
 
   .button {
-    font-size: 1rem;
-  }  
+    font-size: .75rem;
+  }
 
   ol,
   ul {
@@ -205,11 +222,11 @@ ul {
   }
 
   h4 {
-    font-size: .9rem;
+    font-size: .5rem;
   }
 
   .button {
-    font-size: .9rem;
+    font-size: .5rem;
   }
 
   ol,
