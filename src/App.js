@@ -6,7 +6,7 @@ import StickyBox from 'react-sticky-box';
 import { CSSTransition } from 'react-transition-group';
 
 const relaxedSubheadingWeight = 200;
-const acceptedNoticedKey = "acceptedNotice";
+// const acceptedNoticedKey = "acceptedNotice";
 
 function App() {
   // TODO(teddywilson): temporary disable
@@ -30,9 +30,7 @@ function App() {
       <CSSTransition nodeRef={nodeRef} in={!acceptedNotice} timeout={200} classNames="header" unmountOnExit>
         <StickyBox>
           <div ref={nodeRef} className='header'>
-            <h4 style={{
-            }}>{`Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.
-          `}</h4>
+            <h4>Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.</h4>
             <input type="submit" value="OK" onClick={onClick} className="button" />
           </div>
         </StickyBox>
