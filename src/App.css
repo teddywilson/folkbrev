@@ -54,23 +54,11 @@
   color: #ED1C24;
 }
 
-.footer-main {
-  width: 100%;
-  -moz-box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .header {
   width: 100%;
   box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
   -webkit-box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: -1px 2px 50px -21px rgba(0, 0, 0, 0.52);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-top: auto;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -160,7 +148,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-
   ol,
   ul {
     font-size: 1.2rem;
