@@ -57,7 +57,7 @@ function App() {
       <StickyContainer heading={content.block4.heading} text={content.block4.text}>
         <ol>
           <li>
-            <span className="list-item-text">Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.</span>
+            <span className="list-item-text">Gå in på <a href="https://writemail.ai/">writemail.ai</a>.</span>
           </li>
           <li>
             <span className="list-item-text">Fyll i ditt namn och mottagarens namn.</span>
