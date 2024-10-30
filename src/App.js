@@ -57,21 +57,21 @@ function App() {
       <StickyContainer heading={content.block4.heading} text={content.block4.text}>
         <ol>
           <li>
-            Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.
+            <span className="list-item-text">Gå in på <a href="https://writemail.ai/">https://writemail.ai/</a>.</span>
           </li>
           <li>
-            Fyll i ditt namn och mottagarens namn.
+            <span className="list-item-text">Fyll i ditt namn och mottagarens namn.</span>
           </li>
           <li>
-            Skriv in 1-3 prompts (alltså instruktioner till AI-verktyget) i stora rutan. På nästa sida har vi skrivit ihop ett gäng exempel som du gärna får kopiera, men du kan såklart också hitta på egna.
+            <span className="list-item-text">Skriv in 1-3 prompts (alltså instruktioner till AI-verktyget) i stora rutan. På nästa sida har vi skrivit ihop ett gäng exempel som du gärna får kopiera, men du kan såklart också hitta på egna.</span>
           </li>
           <li>
-            Anpassa sedan ditt mejl efter tonläge, längd, språk etc, genom att trycka på knapparna i verktyget.
+            <span className="list-item-text">Anpassa sedan ditt mejl efter tonläge, längd, språk etc, genom att trycka på knapparna i verktyget.</span>
           </li>
           <li>
-            När du är nöjd med din text: kopiera den och klistra in i ditt påbörjade mejl → tryck på Skicka!
+            <span className="list-item-text">När du är nöjd med din text: kopiera den och klistra in i ditt påbörjade mejl → tryck på Skicka!</span>
           </li>
-          <li>Kom sen tillbaka hit för ett sista litet men viktigt steg.</li>
+          <li><span className="list-item-text">Kom sen tillbaka hit för ett sista litet men viktigt steg.</span></li>
         </ol>
       </StickyContainer>
       <StickyContainer heading={content.block5.text} />

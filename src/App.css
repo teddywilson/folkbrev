@@ -133,11 +133,15 @@ ul {
   max-width: 90vw;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 900;
   list-style-type: decimal;
   list-style-position: inside;
   text-indent: -1em;
   padding-left: 1em;
+}
+
+.list-item-text {
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
