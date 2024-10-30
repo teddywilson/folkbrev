@@ -1,7 +1,7 @@
 export const content = {
   header: {
     text: `Innehåll och information om Folkbrev får inte på något sätt delas på Instagram, Facebook, etc.`,
-    button: `OK`
+    button: `ACCEPTERA`
   },
   landing: {
     title: "FOLKBREV"
