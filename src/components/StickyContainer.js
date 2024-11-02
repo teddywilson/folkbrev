@@ -1,19 +1,10 @@
-import React, { useRef } from 'react';
-import Divider from './Divider';
+import React, { useRef } from "react";
 
-const StickyContainer = ({ heading, text, children }) => {
+const StickyContainer = ({ children }) => {
   const containerRef = useRef(null);
 
   return (
     <div ref={containerRef} className="sticky-container">
-      {heading && <h2>{heading}</h2>}
-      {(heading && text) &&
-        <>
-          <h3>{`\n`}</h3>
-          <Divider />
-        </>
-      }
-      {text && <h3>{text}</h3>}
       {children}
     </div>
   );
