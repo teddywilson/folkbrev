@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 
 import "./App.css";
 
+import ContactCard from "./components/ContactCard";
 import ListItem from "./components/ListItem";
 import StickyContainer from "./components/StickyContainer";
 
@@ -124,12 +125,101 @@ function App() {
         </ol>
       </StickyContainer>
       <StickyContainer>
+        <h2>Vem vill du skicka ett Folkbrev till?</h2>
+        <h3>
+          {"\n"}Listorna kommer uppdateras kontinuerligt. Skicka till flera i
+          listan om du orkar.{"\n\n"}
+        </h3>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "32px",
+          }}
+        >
+          <div className="contact-card-container">
+            <ContactCard
+              name={"Maria Malmer Stenergard"}
+              profession={"Utrikesminister (M)"}
+              email={"maria.malmer.stenergard@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Karin Enström"}
+              profession={"Partisekreterare (M)"}
+              email={"karin.enstrom@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Pål Jonson"}
+              profession={"Försvarsminister (M)"}
+              email={"pal.jonson@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Muharrem Demirok"}
+              profession={"Partiledare (C)"}
+              email={"muharrem.demirok@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Karin Ernlund"}
+              profession={"Partisekreterare (C)"}
+              email={"karin.ernlund@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Liza-Maria Norlin"}
+              profession={"Partisekreterare (KD)"}
+              email={"liza-maria.norlin@riksdagen.se"}
+            />
+            <ContactCard
+              name={"Jakob Olofsgård"}
+              profession={"Partisekreterare (L)"}
+              email={"jakob.olofsgard@riksdagen.se"}
+            />
+          </div>
+          <div className="contact-card-container">
+            <ContactCard
+              name={"Ina Kokalari"}
+              profession={"PR- och programkommunikationschef TV4"}
+              email={"ina.kokalari@tv4.se"}
+            />
+            <ContactCard
+              name={"Caspar Opitz"}
+              profession={"Medieombudsmannen"}
+              email={"caspar.opitz@medieombudsmannen.se"}
+            />
+            <ContactCard
+              name={"Anne Lagercrantz"}
+              profession={"VD SVT"}
+              email={"anne.lagercrantz@svt.se"}
+            />
+            <ContactCard
+              name={"Klas Granström"}
+              profession={"Chefredaktör Expressen"}
+              email={"klas.granstrom@expressen.se"}
+            />
+            <ContactCard
+              name={"Peter Wolodarski"}
+              profession={"Chefredaktör DN"}
+              email={"peter.wolodarski@dn.se"}
+            />
+            <ContactCard
+              name={"Lisa Irenius"}
+              profession={"Chefredaktör SvD"}
+              email={"lisa.irenius@svd.se"}
+            />
+            <ContactCard
+              name={"Lotta Edling"}
+              profession={"Publicistisk direktör Bonnier News"}
+              email={"lotta.edling@bonniernews.se"}
+            />
+          </div>
+        </div>
+      </StickyContainer>
+      <StickyContainer>
         <h2>Tack för ditt engagemang!</h2>
         <h3>
           {"\n"}Vill du hjälpa oss bli fler? Dela den här sidan via sms och mail
           (inte sociala medier*) för att uppmana fler att göra sina röster
           hörda: kollegor, familj, vänner och bekanta – så många du kan och
-          orkar!
+          orkar!{"\n\n"}
         </h3>
         <h4>
           * Risken med att sprida Folkbrev i sociala medier är att du blir
