@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import StickyBox from "react-sticky-box";
 import { CSSTransition } from "react-transition-group";
+import { isMobile } from "react-device-detect";
 
 import "./App.css";
 
 import ContactCard from "./components/ContactCard";
+import ContactCardContainer from "./components/ContactCardContainer";
 import ListItem from "./components/ListItem";
 import StickyContainer from "./components/StickyContainer";
 
@@ -133,11 +135,11 @@ function App() {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: isMobile ? "column" : "row",
             gap: "32px",
           }}
         >
-          <div className="contact-card-container">
+          <ContactCardContainer header={"POLITIKER"}>
             <ContactCard
               name={"Maria Malmer Stenergard"}
               profession={"Utrikesminister (M)"}
@@ -173,8 +175,8 @@ function App() {
               profession={"Partisekreterare (L)"}
               email={"jakob.olofsgard@riksdagen.se"}
             />
-          </div>
-          <div className="contact-card-container">
+          </ContactCardContainer>
+          <ContactCardContainer header={"MEDIA"}>
             <ContactCard
               name={"Ina Kokalari"}
               profession={"PR- och programkommunikationschef TV4"}
@@ -210,7 +212,7 @@ function App() {
               profession={"Publicistisk direktör Bonnier News"}
               email={"lotta.edling@bonniernews.se"}
             />
-          </div>
+          </ContactCardContainer>
         </div>
       </StickyContainer>
       <StickyContainer>
