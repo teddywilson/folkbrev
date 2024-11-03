@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserView, MobileView } from "react-device-detect";
 
-const ContactCard = ({ name, profession, email }) => {
+const ContactOutreachCard = ({ name, profession, email }) => {
   const mailto = "mailto:" + email;
   return (
     <>
@@ -49,4 +49,4 @@ const ContactCard = ({ name, profession, email }) => {
   );
 };
 
-export default ContactCard;
+export default ContactOutreachCard;

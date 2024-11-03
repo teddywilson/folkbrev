@@ -5,10 +5,12 @@ import { isMobile } from "react-device-detect";
 
 import "./App.css";
 
-import ContactCard from "./components/ContactCard";
+import ContactOutreachCard from "./components/ContactOutreachCard";
+import ContactSelectionCard from "./components/ContactSelectionCard";
 import ContactCardContainer from "./components/ContactCardContainer";
 import ListItem from "./components/ListItem";
 import StickyContainer from "./components/StickyContainer";
+import { contacts } from "./contacts";
 
 const relaxedSubheadingWeight = 200;
 // const acceptedNoticedKey = "acceptedNotice";
@@ -140,79 +142,66 @@ function App() {
           }}
         >
           <ContactCardContainer header={"POLITIKER"}>
-            <ContactCard
-              name={"Maria Malmer Stenergard"}
-              profession={"Utrikesminister (M)"}
-              email={"maria.malmer.stenergard@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Karin Enström"}
-              profession={"Partisekreterare (M)"}
-              email={"karin.enstrom@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Pål Jonson"}
-              profession={"Försvarsminister (M)"}
-              email={"pal.jonson@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Muharrem Demirok"}
-              profession={"Partiledare (C)"}
-              email={"muharrem.demirok@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Karin Ernlund"}
-              profession={"Partisekreterare (C)"}
-              email={"karin.ernlund@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Liza-Maria Norlin"}
-              profession={"Partisekreterare (KD)"}
-              email={"liza-maria.norlin@riksdagen.se"}
-            />
-            <ContactCard
-              name={"Jakob Olofsgård"}
-              profession={"Partisekreterare (L)"}
-              email={"jakob.olofsgard@riksdagen.se"}
-            />
+            {contacts.politiker.map((contact, index) => (
+              <ContactOutreachCard
+                key={index}
+                name={contact.name}
+                profession={contact.profession}
+                email={contact.email}
+              />
+            ))}
           </ContactCardContainer>
           {isMobile && <h3>{"\n"}</h3>}
           <ContactCardContainer header={"MEDIA"}>
-            <ContactCard
-              name={"Ina Kokalari"}
-              profession={"PR- och programkommunikationschef TV4"}
-              email={"ina.kokalari@tv4.se"}
-            />
-            <ContactCard
-              name={"Caspar Opitz"}
-              profession={"Medieombudsmannen"}
-              email={"caspar.opitz@medieombudsmannen.se"}
-            />
-            <ContactCard
-              name={"Anne Lagercrantz"}
-              profession={"VD SVT"}
-              email={"anne.lagercrantz@svt.se"}
-            />
-            <ContactCard
-              name={"Klas Granström"}
-              profession={"Chefredaktör Expressen"}
-              email={"klas.granstrom@expressen.se"}
-            />
-            <ContactCard
-              name={"Peter Wolodarski"}
-              profession={"Chefredaktör DN"}
-              email={"peter.wolodarski@dn.se"}
-            />
-            <ContactCard
-              name={"Lisa Irenius"}
-              profession={"Chefredaktör SvD"}
-              email={"lisa.irenius@svd.se"}
-            />
-            <ContactCard
-              name={"Lotta Edling"}
-              profession={"Publicistisk direktör Bonnier News"}
-              email={"lotta.edling@bonniernews.se"}
-            />
+            {contacts.media.map((contact, index) => (
+              <ContactOutreachCard
+                key={index}
+                name={contact.name}
+                profession={contact.profession}
+                email={contact.email}
+              />
+            ))}
+          </ContactCardContainer>
+        </div>
+      </StickyContainer>
+      <StickyContainer>
+        <h2>
+          Markera vem eller vilka i listan du har skickat ett Folkbrev till.
+        </h2>
+        <h3>
+          {"\n"}På så sätt kan brevskrivaren efter dig se hur många mail varje
+          person i listan har fått, och skicka till dom som fått lite färre. Så
+          får vi tillsammans så stor spridning som möjligt och når så många som
+          möjligt.
+          {"\n\n"}
+        </h3>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            gap: isMobile ? "0" : "32px",
+          }}
+        >
+          <ContactCardContainer header={"POLITIKER"}>
+            {contacts.politiker.map((contact, index) => (
+              <ContactSelectionCard
+                key={index}
+                name={contact.name}
+                profession={contact.profession}
+                email={contact.email}
+              />
+            ))}
+          </ContactCardContainer>
+          {isMobile && <h3>{"\n"}</h3>}
+          <ContactCardContainer header={"MEDIA"}>
+            {contacts.media.map((contact, index) => (
+              <ContactSelectionCard
+                key={index}
+                name={contact.name}
+                profession={contact.profession}
+                email={contact.email}
+              />
+            ))}
           </ContactCardContainer>
         </div>
       </StickyContainer>
