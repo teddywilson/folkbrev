@@ -136,7 +136,7 @@ function App() {
           style={{
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
-            gap: "32px",
+            gap: isMobile ? "0" : "32px",
           }}
         >
           <ContactCardContainer header={"POLITIKER"}>
@@ -176,6 +176,7 @@ function App() {
               email={"jakob.olofsgard@riksdagen.se"}
             />
           </ContactCardContainer>
+          {isMobile && <h3>{"\n"}</h3>}
           <ContactCardContainer header={"MEDIA"}>
             <ContactCard
               name={"Ina Kokalari"}
