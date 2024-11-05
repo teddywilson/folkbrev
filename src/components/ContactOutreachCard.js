@@ -10,13 +10,12 @@ const ContactOutreachCard = ({ name, profession, email }) => {
       <BrowserView>
         <div>
           <h4>
-            {name}{" "}
             <span
               style={{
                 fontWeight: 400,
               }}
             >
-              {profession}
+              {name} {profession}
             </span>
           </h4>
           <h4>
@@ -34,13 +33,12 @@ const ContactOutreachCard = ({ name, profession, email }) => {
       <MobileView>
         <div>
           <h4>
-            <a href={mailto}>{name}</a>{" "}
             <span
               style={{
                 fontWeight: 400,
               }}
             >
-              {profession}
+              <a href={mailto}>{name}</a> {profession}
             </span>
           </h4>
         </div>

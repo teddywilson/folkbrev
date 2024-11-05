@@ -79,14 +79,10 @@ function App() {
       <StickyContainer>
         <h2>
           Det här är en möjlighet att konkret engagera dig i kampen för att få
-          stopp på Israels brutala krigföring i Mellanöstern och folkmord i
-          Gaza.
+          stopp på Israels brutala krigföring och folkmord. Med sociala medier
+          kommer man inte särskilt långt, men med hjälp av ai och några minuter
+          av din tid kan du vara med och göra skillnad på riktigt.
         </h2>
-        <h3>
-          {"\n"}Med sociala medier kommer man inte särskilt långt, men med hjälp
-          av ai och några minuter av din tid kan du vara med och göra skillnad
-          på riktigt.
-        </h3>
       </StickyContainer>
       <StickyContainer>
         <h2>Vad är ett Folkbrev?</h2>
