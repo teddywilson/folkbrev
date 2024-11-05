@@ -1,4 +1,4 @@
-# Folkbrev för Gaza & Lebanon
+# folkbrev.com
 
 ```
 npm install && npm start
