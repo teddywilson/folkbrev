@@ -1,12 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../utils/firebase"; // Ensure the correct path
+import { onValue, ref, set } from "firebase/database";
 
-const ContactSelectionCard = ({ name, profession }) => {
-  const [count, setCount] = useState(Math.floor(Math.random() * 30));
+const sanitizeEmail = (email) => {
+  return email.replace(/[.#$[\]]/g, "_");
+};
+
+const ContactSelectionCard = ({ name, profession, email }) => {
+  const [count, setCount] = useState(0);
   const [isChecked, setChecked] = useState(false);
 
+  useEffect(() => {
+    const sanitizedEmail = sanitizeEmail(email);
+    const countRef = ref(db, `contacts/${sanitizedEmail}`);
+
+    const unsubscribe = onValue(countRef, (snapshot) => {
+      const data = snapshot.val();
+      setCount(data ? data.count : 0);
+    });
+
+    // Cleanup listener using the return function from onValue
+    return () => unsubscribe();
+  }, [email]);
+
   const handleChange = () => {
-    setChecked(!isChecked);
-    setCount(count + 1);
+    if (!isChecked) {
+      const sanitizedEmail = sanitizeEmail(email);
+      const newCount = count + 1;
+      set(ref(db, `contacts/${sanitizedEmail}`), { count: newCount });
+      setChecked(true);
+    }
   };
 
   return (
