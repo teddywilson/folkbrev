@@ -27,9 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - name: Debug Environment Variables
-        run: |
-          echo "FIREBASE_PROJECT_ID: $FIREBASE_PROJECT_ID"
       - name: Build the project
         env:
           FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
@@ -41,7 +38,9 @@ jobs:
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
           FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}      
         run: npm run build
-
+      - name: Debug Environment Variables
+        run: |
+          echo "FIREBASE_PROJECT_ID: $FIREBASE_PROJECT_ID"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
