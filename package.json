@@ -2,7 +2,7 @@
   "name": "folkbrev",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://teddywilson.github.io/folkbrev",
+  "homepage": "https://folkbrev.com",
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
     "react": "^18.3.1",
