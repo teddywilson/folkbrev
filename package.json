@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://folkbrev.com",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@uidotdev/usehooks": "^2.4.1",
     "dotenv": "^16.4.5",
     "firebase": "^11.0.1",

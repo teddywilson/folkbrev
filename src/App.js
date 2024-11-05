@@ -8,6 +8,7 @@ import "./App.css";
 import ContactOutreachCard from "./components/ContactOutreachCard";
 import ContactSelectionCard from "./components/ContactSelectionCard";
 import ContactCardContainer from "./components/ContactCardContainer";
+import DownArrow from "./components/DownArrow";
 import ListItem from "./components/ListItem";
 import StickyContainer from "./components/StickyContainer";
 import { contacts } from "./contacts";
@@ -67,6 +68,7 @@ function App() {
             <span className="libanon">LIBANON</span>
           </i>
         </h2>
+        <DownArrow />
       </StickyContainer>
       <StickyContainer>
         <h2>
