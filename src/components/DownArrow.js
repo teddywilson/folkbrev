@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const DownArrow = () => (
-  <div style={{ textAlign: 'center', marginTop: '16px' }}>
-    <FontAwesomeIcon icon={faArrowDown} size="1x" />
+  <div style={{ textAlign: 'center', marginTop: '32px' }}>
+    <FontAwesomeIcon icon={faLongArrowDown} size="1x" />
   </div>
 );
 

@@ -7,10 +7,10 @@ const ContactCardContainer = ({ header, children }) => {
     <div
       className="contact-card-container"
       style={{
-        gap: isMobile ? "0px" : "16px",
+        gap: isMobile ? "2px" : "16px",
       }}
     >
-      {isMobile && <h5>{header}</h5>}
+      {isMobile && <h3 style={{ fontWeight: "800" }}>{header}</h3>}
       {children}
     </div>
   );

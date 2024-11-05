@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import StickyBox from "react-sticky-box";
-import { CSSTransition } from "react-transition-group";
+import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
+import ReactDOM from "react-dom";
 
 import "./App.css";
 
@@ -14,46 +13,35 @@ import StickyContainer from "./components/StickyContainer";
 import { contacts } from "./contacts";
 
 const relaxedSubheadingWeight = 200;
-// const acceptedNoticedKey = "acceptedNotice";
+
+function Modal({ onClose }) {
+  return ReactDOM.createPortal(
+    <div className="modal-backdrop">
+      <div className="modal-content">
+        <h3 style={{ fontWeight: "900" }}>Varning</h3>
+        <h3>
+          {"\n"}Innehåll och information om Folkbrev får inte på något sätt
+          delas på Instagram, Facebook, etc.{"\n\n"}
+        </h3>
+        <button onClick={onClose} className="button">
+          ACCEPTERA
+        </button>
+      </div>
+    </div>,
+    document.body
+  );
+}
 
 function App() {
-  // TODO(teddywilson): temporary disable
-  // const [acceptedNotice, setAcceptedNotice] = useState(() => {
-  //   return JSON.parse(window.sessionStorage.getItem(acceptedNoticedKey)) || false;
-  // });
   const [acceptedNotice, setAcceptedNotice] = useState(false);
-  const nodeRef = useRef(null);
 
   const onClick = () => {
     setAcceptedNotice(true);
   };
 
-  useEffect(() => {
-    // TODO(teddywilson): temporary disable
-    // window.sessionStorage.setItem(acceptedNoticedKey, JSON.stringify(acceptedNotice));
-  }, [acceptedNotice]);
-
   return (
     <div className="app">
-      <CSSTransition
-        nodeRef={nodeRef}
-        in={!acceptedNotice}
-        timeout={200}
-        classNames="header"
-        unmountOnExit
-      >
-        <StickyBox>
-          <div ref={nodeRef} className="header">
-            <h4>
-              Innehåll och information om Folkbrev får inte på något sätt delas
-              på Instagram, Facebook, etc.
-            </h4>
-            <div onClick={onClick} className="button">
-              ACCEPTERA
-            </div>
-          </div>
-        </StickyBox>
-      </CSSTransition>
+      {!acceptedNotice && <Modal onClose={onClick} />}
       <StickyContainer>
         <h1>FOLKBREV</h1>
         <h2
@@ -73,7 +61,7 @@ function App() {
       <StickyContainer>
         <h2>
           Det krävs att vi blir många för att det här ska fungera. Förmodligen
-          jättemånga. Så tack för att du är här
+          jättemånga. Så tack för att du är här.
         </h2>
       </StickyContainer>
       <StickyContainer>
@@ -102,7 +90,15 @@ function App() {
             Välj vem du vill skicka Folkbrev till på nästa sida.
           </ListItem>
           <ListItem>
-            Gå in på <a href="https://writemail.ai/">writemail.ai</a>.
+            Gå in på{" "}
+            <a
+              href="https://writemail.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              writemail.ai
+            </a>
+            .
           </ListItem>
           <ListItem>
             Skriv eller klistra in 1-3 prompts (alltså instruktioner till
