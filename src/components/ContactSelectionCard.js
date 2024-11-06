@@ -69,21 +69,13 @@ const ContactSelectionCard = ({ name, profession, email }) => {
         >
           {!isChecked ? (
             <>
-              <span
-                role="img"
-                aria-label="thumbs-up"
-                style={{ display: "inline-block", lineHeight: 1 }}
-              >
+              <span role="img" aria-label="thumbs-up" style={{ display: 'inline-block', lineHeight: 1 }}>
                 👍
               </span>{" "}
             </>
           ) : (
             <>
-              <span
-                role="img"
-                aria-label="checkmark"
-                style={{ display: "inline-block", lineHeight: 1 }}
-              >
+              <span role="img" aria-label="checkmark" style={{ display: 'inline-block', lineHeight: 1 }}>
                 ✅
               </span>{" "}
             </>

@@ -1,7 +1,5 @@
 import React from "react";
 
-import { BrowserView, MobileView } from "react-device-detect";
-
 const ContactOutreachCard = ({ name, profession, email }) => {
   const mailto = "mailto:" + email;
   return (
