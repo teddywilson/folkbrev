@@ -18,10 +18,12 @@ function Modal({ onClose }) {
   return ReactDOM.createPortal(
     <div className="modal-backdrop">
       <div className="modal-content">
-        <h3 style={{ fontWeight: "900" }}>Varning</h3>
+        <h3 style={{ fontWeight: "900" }}>Viktigt!</h3>
         <h3>
-          {"\n"}Innehåll och information om Folkbrev får inte på något sätt
-          delas på Instagram, Facebook, etc.{"\n\n"}
+          {"\n"}Vi ber er att inte dela Folkbrev i sociala medier eller andra
+          offentliga forum. Använd i första hand mail/sms och dela bara med
+          personer du känner.
+          {"\n\n"}
         </h3>
         <button onClick={onClose} className="button">
           ACCEPTERA
@@ -61,7 +63,14 @@ function App() {
       <StickyContainer>
         <h2>
           Det krävs att vi blir många för att det här ska fungera. Förmodligen
-          jättemånga. Så tack för att du är här.
+          jättemånga. Så tack för att du är här.&nbsp;
+          <span
+            role="img"
+            aria-label="dove"
+            style={{ marginLeft: "8px", position: "relative", top: "16px" }}
+          >
+            🕊️
+          </span>
         </h2>
       </StickyContainer>
       <StickyContainer>
@@ -87,7 +96,8 @@ function App() {
         <h3>{"\n"}Läs igenom instruktionerna innan du går vidare.</h3>
         <ol>
           <ListItem>
-            Välj vem du vill skicka Folkbrev till på nästa sida.
+            Välj vem du vill skicka Folkbrev till genom att klicka på namnet.
+            Kom sen tillbaka hit.
           </ListItem>
           <ListItem>
             Gå in på{" "}
@@ -103,7 +113,11 @@ function App() {
           <ListItem>
             Skriv eller klistra in 1-3 prompts (alltså instruktioner till
             ai-verktyget) i stora rutan. Vi har skrivit ihop ett gäng{" "}
-            <a href="https://docs.google.com/document/d/1oyDJos0B11S6k3KWRFx-0oTdsPrxm1CN9OehvbbHXwA/edit?usp=sharing">
+            <a
+              href="https://docs.google.com/document/d/1Hzs2dq4VsjORrQgkPL2ePiymn3-lqHf74GcT4oRKOBk/edit?tab=t.0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               exempel
             </a>{" "}
             som du gärna får kopiera, men du kan såklart hitta på egna istället.

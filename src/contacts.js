@@ -39,7 +39,7 @@ export const contacts = {
   media: [
     {
       name: "Ina Kokalari",
-      profession: "PR- och programkommunikationschef TV4",
+      profession: "PR- & kommunikationschef TV4",
       email: "ina.kokalari@tv4.se",
     },
     {
