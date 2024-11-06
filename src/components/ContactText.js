@@ -1,17 +1,16 @@
 import React from "react";
 
-const ContactText = ({ bold, children }) => {
+const ContactText = ({ bold, children, style }) => {
   return (
-    <div>
-      <h4
-        style={{
-          fontWeight: bold ? 900 : 400,
-          marginTop: 0,
-        }}
-      >
-        {children}
-      </h4>
-    </div>
+    <h4
+      style={{
+        fontWeight: bold ? 900 : 400,
+        marginTop: 0,
+        ...style,
+      }}
+    >
+      {children}
+    </h4>
   );
 };
 
