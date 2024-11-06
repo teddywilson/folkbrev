@@ -10,7 +10,6 @@ const ContactCardContainer = ({ header, children }) => {
         gap: isMobile ? "8px" : "16px",
       }}
     >
-      {/* {isMobile && <h3 style={{ fontWeight: "800" }}>{header}</h3>} */}
       {children}
     </div>
   );

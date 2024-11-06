@@ -5,7 +5,6 @@ const ContactOutreachCard = ({ name, profession, email }) => {
   return (
     <>
       {" "}
-      {/* <BrowserView> */}
       <div>
         <h4>
           <span
@@ -27,20 +26,6 @@ const ContactOutreachCard = ({ name, profession, email }) => {
           </span>
         </h4>
       </div>
-      {/* </BrowserView>
-      <MobileView>
-        <div>
-          <h4>
-            <span
-              style={{
-                fontWeight: 400,
-              }}
-            >
-              <a href={mailto}>{name}</a> {profession}
-            </span>
-          </h4>
-        </div>
-      </MobileView> */}
     </>
   );
 };
