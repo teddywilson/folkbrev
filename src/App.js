@@ -149,7 +149,7 @@ function App() {
             gap: isMobile ? "0" : "32px",
           }}
         >
-          <ContactCardContainer header={"POLITIKER"}>
+          <ContactCardContainer>
             {contacts.politiker.map((contact, index) => (
               <ContactOutreachCard
                 key={index}
@@ -160,7 +160,7 @@ function App() {
             ))}
           </ContactCardContainer>
           {isMobile && <div style={{ height: "8px" }} />}
-          <ContactCardContainer header={"MEDIA"}>
+          <ContactCardContainer>
             {contacts.media.map((contact, index) => (
               <ContactOutreachCard
                 key={index}
@@ -190,7 +190,7 @@ function App() {
             gap: isMobile ? "0" : "32px",
           }}
         >
-          <ContactCardContainer header={"POLITIKER"}>
+          <ContactCardContainer>
             {contacts.politiker.map((contact, index) => (
               <ContactSelectionCard
                 key={index}
@@ -201,7 +201,7 @@ function App() {
             ))}
           </ContactCardContainer>
           {isMobile && <div style={{ height: "8px" }} />}
-          <ContactCardContainer header={"MEDIA"}>
+          <ContactCardContainer>
             {contacts.media.map((contact, index) => (
               <ContactSelectionCard
                 key={index}
