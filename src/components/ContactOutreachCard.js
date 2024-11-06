@@ -7,7 +7,7 @@ const ContactOutreachCard = ({ name, profession, email }) => {
   return (
     <>
       {" "}
-      <BrowserView>
+      {/* <BrowserView> */}
         <div>
           <h4>
             <span
@@ -29,7 +29,7 @@ const ContactOutreachCard = ({ name, profession, email }) => {
             </span>
           </h4>
         </div>
-      </BrowserView>
+      {/* </BrowserView>
       <MobileView>
         <div>
           <h4>
@@ -42,7 +42,7 @@ const ContactOutreachCard = ({ name, profession, email }) => {
             </span>
           </h4>
         </div>
-      </MobileView>
+      </MobileView> */}
     </>
   );
 };

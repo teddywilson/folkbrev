@@ -159,7 +159,7 @@ function App() {
               />
             ))}
           </ContactCardContainer>
-          {isMobile && <h3>{"\n"}</h3>}
+          {isMobile && <div style={{ height: "8px" }} />}
           <ContactCardContainer header={"MEDIA"}>
             {contacts.media.map((contact, index) => (
               <ContactOutreachCard
@@ -200,7 +200,7 @@ function App() {
               />
             ))}
           </ContactCardContainer>
-          {isMobile && <h3>{"\n"}</h3>}
+          {isMobile && <div style={{ height: "8px" }} />}
           <ContactCardContainer header={"MEDIA"}>
             {contacts.media.map((contact, index) => (
               <ContactSelectionCard

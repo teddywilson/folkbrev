@@ -194,10 +194,6 @@ ul {
 .contact-card-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.contact-selection-card {
 }
 
 .list-item-text {
