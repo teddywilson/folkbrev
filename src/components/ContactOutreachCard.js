@@ -1,30 +1,19 @@
 import React from "react";
 
+import ContactText from "./ContactText";
+
 const ContactOutreachCard = ({ name, profession, email }) => {
   const mailto = "mailto:" + email;
   return (
     <>
       {" "}
       <div>
-        <h4>
-          <span
-            style={{
-              fontWeight: 400,
-            }}
-          >
-            {name}, {profession}
-          </span>
-        </h4>
-        <h4>
-          <span
-            style={{
-              fontWeight: 400,
-              marginTop: 0,
-            }}
-          >
-            <a href={mailto}>{email}</a>
-          </span>
-        </h4>
+        <ContactText>
+          {name}, {profession}
+        </ContactText>
+        <ContactText>
+          <a href={mailto}>{email}</a>
+        </ContactText>
       </div>
     </>
   );

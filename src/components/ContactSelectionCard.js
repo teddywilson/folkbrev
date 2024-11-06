@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../utils/firebase"; // Ensure the correct path
 import { onValue, ref, set } from "firebase/database";
+import ContactText from "./ContactText";
 
 const sanitizeEmail = (email) => {
   return email.replace(/[.#$[\]]/g, "_");
@@ -38,18 +39,12 @@ const ContactSelectionCard = ({ name, profession, email }) => {
         display: "flex",
         flexDirection: "row",
         gap: "4px",
-        alignItems: "baseline",
+        alignItems: "center",
       }}
     >
-      <h4>
-        <span
-          style={{
-            fontWeight: 400,
-          }}
-        >
-          {name}, {profession}
-        </span>
-      </h4>
+      <ContactText>
+        {name}, {profession}
+      </ContactText>
       <div
         style={{
           display: "flex",
@@ -59,7 +54,7 @@ const ContactSelectionCard = ({ name, profession, email }) => {
           alignItems: "center",
         }}
       >
-        <h4
+        <ContactText
           style={{
             cursor: !isChecked ? "pointer" : undefined,
             opacity: "1",
@@ -87,8 +82,8 @@ const ContactSelectionCard = ({ name, profession, email }) => {
               </span>{" "}
             </>
           )}
-        </h4>
-        <h5>{count}</h5>
+        </ContactText>
+        <ContactText bold={true}>{count}</ContactText>
       </div>
     </div>
   );
