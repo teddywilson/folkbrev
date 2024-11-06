@@ -93,13 +93,16 @@ function App() {
       </StickyContainer>
       <StickyContainer>
         <h2>Hur funkar det?</h2>
-        <h3>{"\n"}Läs igenom instruktionerna innan du går vidare.</h3>
-        <ol>
-          <ListItem>
+        <h3>
+          {"\n"}Läs igenom instruktionerna innan du går vidare.{"\n"}
+          {"\n"}
+        </h3>
+        <div>
+          <ListItem number={1}>
             Välj vem du vill skicka Folkbrev till genom att klicka på namnet.
             Kom sen tillbaka hit.
           </ListItem>
-          <ListItem>
+          <ListItem number={2}>
             Gå in på{" "}
             <a
               href="https://writemail.ai/"
@@ -110,7 +113,7 @@ function App() {
             </a>
             .
           </ListItem>
-          <ListItem>
+          <ListItem number={3}>
             Skriv eller klistra in 1-3 prompts (alltså instruktioner till
             ai-verktyget) i stora rutan. Vi har skrivit ihop ett gäng{" "}
             <a
@@ -122,19 +125,19 @@ function App() {
             </a>{" "}
             som du gärna får kopiera, men du kan såklart hitta på egna istället.
           </ListItem>
-          <ListItem>
+          <ListItem number={4}>
             Anpassa sedan ditt mail med hjälp av knapparna under stora rutan,
             efter tonläge, längd, språk etc., och tryck sen på “Generate My
             Email with Ai”
           </ListItem>
-          <ListItem>
+          <ListItem number={5}>
             När du är nöjd med din text: kopiera den, klistra in i ett nytt mail
             (din privata) och skicka iväg till den du önskar!
           </ListItem>
-          <ListItem>
+          <ListItem number={6}>
             Kom sen tillbaka hit för ett sista litet men viktigt steg.
           </ListItem>
-        </ol>
+        </div>
       </StickyContainer>
       <StickyContainer>
         <h2>Vem vill du skicka ett Folkbrev till?</h2>
