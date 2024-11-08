@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactText = ({ bold, children, style }) => {
+const ContactText = ({ bold, children, style, onClick }) => {
   return (
     <h4
       style={{
@@ -8,6 +8,7 @@ const ContactText = ({ bold, children, style }) => {
         marginTop: 0,
         ...style,
       }}
+      onClick={onClick}
     >
       {children}
     </h4>
