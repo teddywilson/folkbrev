@@ -99,8 +99,10 @@ function App() {
         </h3>
         <div>
           <ListItem number={1}>
-            Välj vem du vill skicka Folkbrev till genom att klicka på namnet.
-            Kom sen tillbaka hit.
+            [Välj mottagare]: Gå till nästa sida och välj vem du vill skicka
+            ett Folkbrev till. Du kan göra det genom att klicka på personens
+            mailadress, så öppnas ett nytt mail. Alternativt så kan du på egen
+            hand kopiera mailadressen och klistra in den i ett nytt mail.
           </ListItem>
           <ListItem number={2}>
             Gå in på{" "}
